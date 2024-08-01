@@ -26,59 +26,56 @@ This project is a Django-based REST API for generating unique tracking numbers, 
    git clone https://github.com/vickramapandian/tracking_numbers.git
    cd tracking_numbers
 
-Set Up a Virtual Environment
+2. **Set Up a Virtual Environment**
 
 It's recommended to use a virtual environment to manage dependencies.
 
-bash
-Copy code
-python -m venv env
-Activate the Virtual Environment
+    ```bash
+    python -m venv env
+    Activate the Virtual Environment
 
-Windows:
+    Windows:
 
-bash
-Copy code
-.\env\Scripts\activate
-macOS/Linux:
+    ```bash
+    .\env\Scripts\activate
 
-bash
-Copy code
-source env/bin/activate
-Install the Requirements
+    macOS/Linux:
+
+    ```bash
+    source env/bin/activate
+
+3. **Install the Requirements**
 
 Install the project dependencies using pip:
 
-bash
-Copy code
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
-Apply Migrations
+4. **Apply Migrations**
 Run the following command to apply the migrations:
 
-bash
-Copy code
-python manage.py migrate
+    ```bash
+    python manage.py migrate
 
-Start the Development Server
-Launch the Django development server:
 
-bash
-Copy code
-python manage.py runserver
-The API will be available at http://127.0.0.1:8000/.
+5. **Launch the Django development server:**
 
-2. Deploy using Docker
+    ```bash
+    python manage.py runserver
+    The API will be available at http://127.0.0.1:8000/.
+
+### 2. Deploy using Docker
 Build the Docker Image
 
 Navigate to the project directory and build the Docker image:
 
 Deployment using docker
 Build the Docker Image: Run the following command from the root of your project (where your Dockerfile is located):
-docker build -t tracking_system .
+
+    ```docker build -t tracking_system .
 
 Run the Docker Container: Once the image is built, run the container using:
-docker run -p 8000:8000 tracking_system
+    ```docker run -p 8000:8000 tracking_system
 This will start the application in a Docker container accessible at http://127.0.0.1:8000/.
 
 Configuration
