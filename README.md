@@ -95,7 +95,11 @@ This will return a JSON response with the newly generated tracking number:
     }
 
 ### Final Notes
+
 Database: Using a PostgreSQL database with Django ensures that auto-incrementing IDs are unique even under high concurrency.
+
 UUID: Using a UUID field guarantees uniqueness across distributed systems, even if IDs are reset.
+
 DRF: Django REST Framework simplifies the creation of RESTful APIs, providing serializers and views to handle requests and responses efficiently.
+
 This setup creates a scalable and efficient system for generating unique tracking numbers using Django and Django REST Framework. Adjust the configuration and optimize as needed based on your specific scalability and performance requirements.
