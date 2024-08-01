@@ -31,36 +31,34 @@ This project is a Django-based REST API for generating unique tracking numbers, 
 
 It's recommended to use a virtual environment to manage dependencies.
 
-    ```python -m venv env
+    python -m venv env
 
     Activate the Virtual Environment
 
     Windows:
 
-    ```bash
     .\env\Scripts\activate
 
     macOS/Linux:
 
-    ```bash
     source env/bin/activate
 
 3. **Install the Requirements**
 
 Install the project dependencies using pip:
 
-    ```pip install -r requirements.txt
+    pip install -r requirements.txt
 
 4. **Apply Migrations**
+
 Run the following command to apply the migrations:
 
-    ```python manage.py migrate
+    python manage.py migrate
 
 
 5. **Launch the Django development server:**
 
-    
-    ```python manage.py runserver
+    python manage.py runserver
     The API will be available at http://127.0.0.1:8000/.
 
 ### 2. Deploy using Docker
@@ -71,11 +69,11 @@ Navigate to the project directory and build the Docker image:
 Deployment using docker
 Build the Docker Image: Run the following command from the root of your project (where your Dockerfile is located):
 
-    ```docker build -t tracking_system .
+    docker build -t tracking_system .
 
 Run the Docker Container: Once the image is built, run the container using:
 
-    ```docker run -p 8000:8000 tracking_system
+    docker run -p 8000:8000 tracking_system
 
 This will start the application in a Docker container accessible at http://127.0.0.1:8000/.
 
