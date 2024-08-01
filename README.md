@@ -1,4 +1,3 @@
-# tracking_numbers
 # Tracking Number Generator
 
 This project is a Django-based REST API for generating unique tracking numbers, designed to handle high concurrency and ensure scalability. This application can be deployed either using pip for a virtual environment setup or Docker for containerization.
