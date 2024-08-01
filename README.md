@@ -20,14 +20,14 @@ This project is a Django-based REST API for generating unique tracking numbers, 
 
 ### 1. Deploy using pip
 
-1. **Clone the Repository**
+1.1. **Clone the Repository**
 
    ```
    git clone https://github.com/vickramapandian/tracking_numbers.git
    cd tracking_numbers
    ```
 
-2. **Set Up a Virtual Environment**
+1.2. **Set Up a Virtual Environment**
 
 It's recommended to use a virtual environment to manage dependencies.
 
@@ -43,20 +43,20 @@ It's recommended to use a virtual environment to manage dependencies.
 
     source env/bin/activate
 
-3. **Install the Requirements**
+1.3. **Install the Requirements**
 
 Install the project dependencies using pip:
 
     pip install -r requirements.txt
 
-4. **Apply Migrations**
+1.4. **Apply Migrations**
 
 Run the following command to apply the migrations:
 
     python manage.py migrate
 
 
-5. **Launch the Django development server:**
+1.5. **Launch the Django development server:**
 
     python manage.py runserver
     The API will be available at http://127.0.0.1:8000/.
@@ -77,6 +77,6 @@ Run the Docker Container: Once the image is built, run the container using:
 
 This will start the application in a Docker container accessible at http://127.0.0.1:8000/.
 
-Configuration
+### Configuration
 Environment Variables: Configure the application using environment variables. Use a .env file or pass them directly when running the Docker container.
 Database: The default setup uses SQLite for development. You can configure other databases (e.g., PostgreSQL, MySQL) in settings.py for production use.
